@@ -1,0 +1,6 @@
+# Local build tooling (portable JDK + test jars) — do not commit
+.tools/
+
+# Compiled output
+build/
+*.class

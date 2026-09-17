@@ -1,0 +1,7 @@
+[
+  {"id":1,"name":"Coffee Mug","priceCents":899,"quantity":27,"description":"12oz ceramic mug"},
+  {"id":2,"name":"Notebook","priceCents":350,"quantity":44,"description":"80-page ruled notebook"},
+  {"id":3,"name":"Ballpoint Pen","priceCents":150,"quantity":100,"description":"black ink, pack of 1"},
+  {"id":4,"name":"Water Bottle","priceCents":1299,"quantity":15,"description":"24oz stainless steel"},
+  {"id":5,"name":"Desk Lamp","priceCents":2499,"quantity":6,"description":"LED, adjustable arm"}
+]

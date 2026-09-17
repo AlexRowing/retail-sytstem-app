@@ -1,0 +1,5 @@
+bin/
+*.class
+inventory.json
+categories.json
+receipt_*.txt

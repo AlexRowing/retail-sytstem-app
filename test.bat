@@ -10,8 +10,8 @@ for /d %%D in (".tools\jdk\jdk-*") do (
     if exist "%%D\bin\java.exe"  set "JAVA=%%D\bin\java.exe"
 )
 
-set "JUNIT=.tools\jars\junit-4.13.2.jar"
-set "HAMCREST=.tools\jars\hamcrest-core-1.3.jar"
+set "JUNIT=lib\junit-4.13.2.jar"
+set "HAMCREST=lib\hamcrest-core-1.3.jar"
 
 if not exist "build\classes" mkdir "build\classes"
 if not exist "build\test-classes" mkdir "build\test-classes"

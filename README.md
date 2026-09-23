@@ -7,22 +7,7 @@ restarting the app.
 
 Everything is written in plain Java with **no outside libraries** in the app
 itself (the only downloaded pieces are a JDK to compile with and the JUnit jars
-used by the tests). The goal is code that all three of us can read and explain.
-
----
-
-## What you need
-
-A **JDK** (Java compiler), version 8 or newer. Check with:
-
-```bash
-javac -version
-```
-
-If that prints a version, you are set. If you don't have a JDK, this project can
-also use a portable JDK placed in a local `.tools\jdk\` folder — the `.bat`
-scripts below automatically use it when it is present. (The `.tools` folder is
-**not** committed to git; it is just local build tooling.)
+used by the tests).
 
 ---
 
@@ -36,32 +21,6 @@ folder in a terminal (Command Prompt or PowerShell):
 | Compile the app | `build.bat` |
 | Compile + run all tests | `test.bat` |
 | Run the app | `run.bat` |
-
-### Exact commands (if you prefer to type them yourself)
-
-Assuming `javac`/`java` are on your PATH and you are in the project folder:
-
-```bash
-# 1) Compile the app
-javac -d build/classes src/shelfside/*.java
-
-# 2) Run the app
-java -cp build/classes shelfside.ShelfSideWrapper
-
-# 3) Compile and run the tests (Windows classpath uses ';' between entries)
-javac -cp "build/classes;.tools/jars/junit-4.13.2.jar;.tools/jars/hamcrest-core-1.3.jar" -d build/test-classes test/shelfside/*.java
-java  -cp "build/classes;build/test-classes;.tools/jars/junit-4.13.2.jar;.tools/jars/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore shelfside.ItemTest shelfside.StorageTest shelfside.LoginProcessorTest shelfside.RetailSideTest shelfside.ClientSideTest
-```
-
-On macOS/Linux, replace the `;` in the classpath with `:`.
-
-You can also point the app at a different inventory file:
-
-```bash
-run.bat myfile.json
-```
-
----
 
 ## Demo login (retailer)
 

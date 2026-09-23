@@ -9,6 +9,8 @@ Everything is written in plain Java with **no outside libraries** in the app
 itself (the only downloaded pieces are a JDK to compile with and the JUnit jars
 used by the tests).
 
+![Shelf Side system diagram](docs/system-diagram.jpg)
+
 ---
 
 ## Compile, test, and run
